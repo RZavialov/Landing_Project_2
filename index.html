@@ -64,7 +64,13 @@
                 Эксклюзивные маршруты под ключ, Пешая прогулка, Экскурсия по рекам и каналам, Погрулка по крышам, Экскурсия в Петергоф
             </td>
         </tr>
-       </table> 
+       </table>
+       <form action="">
+        <input type="checkbox" name="service" value="transfer">
+        <label for="">Трансфер до места экскурсии</label><br>
+        <input type="checkbox" name="service" value="disabled transfer">
+        <label for="">Трансфер для людей из маломобильных групп населения</label>
+       </form>
        <p></p>    
        <hr align="left" width="650">
        <p></p>
@@ -104,8 +110,16 @@
        <p></p>
        <form action="">
         <input type="text" placeholder="Имя"><br>
-        <input type="text" placeholder="Фамилия"><br>
-       </form>
+        <input type="text" placeholder="Фамилия"><br><br>
+        <button type="submit">Отправить</button>
+       </form><br>
+       <select name="tariff" id="tariff">
+        <label for="tariff">Выберите тариф</label>
+        <option value="econom">Эконом</option>
+        <option value="comfort">Комфорт</option>
+        <option value="premium">Премиум</option>
+        <option value="luxery">Люкс</option>
+       </select>
        <a href="https://t.me/grammazeka">Связаться с автором экскурсии</a>
     </body>
 </html>
