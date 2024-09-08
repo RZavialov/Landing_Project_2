@@ -66,11 +66,34 @@
         </tr>
        </table>
        <form action="">
-        <input type="checkbox" name="service" value="transfer">
-        <label for="">Трансфер до места экскурсии</label><br>
-        <input type="checkbox" name="service" value="disabled transfer">
-        <label for="">Трансфер для людей из маломобильных групп населения</label>
+        <ul>
+            <li>
+                <input type="checkbox" name="service" value="transfer" data-price="100">
+                <label for="">Трансфер до места экскурсии</label><br>
+            </li>
+            <li>
+                <input type="checkbox" name="service" value="disabled transfer" data-price="100">
+                <label for="">Трансфер для людей из маломобильных групп населения</label>
+            </li>
+        </ul>
        </form>
+       <p2 id="total-price">Сумма: 0 руб.</p2>
+ <!---      <script>
+        const checkboxes = document.querySelectorAll('input[name="services"]');
+        const totalPriceElement = document.getelementsbyid('total-price');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change,()=> {
+            let totalPrice = 0;
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    totalPrice += parseInt(checkbox.getAttribute('data-price'));
+                }
+            });
+            totalPriceElement.textContent = 'Сумма: ${totalPrice} рублей';
+        }');
+        });
+       </script>
+--->
        <p></p>    
        <hr align="left" width="650">
        <p></p>
@@ -113,7 +136,7 @@
         <input type="text" placeholder="Фамилия"><br>
         <button type="submit">Отправить</button>
        </form><br>
-       <label for="tariff">Выберите тариф</label><br>
+       <label for="tariff">Выберите тариф:</label>
        <select name="tariff" id="tariff"><br>
         <option value="econom">Эконом</option>
         <option value="comfort">Комфорт</option>
