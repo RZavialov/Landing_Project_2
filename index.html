@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <header>
+        <header id="TopPage">
             <nav>
                 <a href="#home">Главная</a>
                 <a href="#program">Программа</a>
                 <a href="#contacts">Контакты</a>
+                <a href="#feedback">Отзывы</a>
             </nav>
         </header>
         <header id="home">
@@ -140,60 +141,63 @@
                     });
                 </script>
             </div>
-
-            <figure>
-                <h3>Отзывы клиентов</h3>
-                <img src="Images/5.png" alt="Аня и Сережа, Пермь" width="500">
-                <figcaption><b><i>Аня и Сережа, Пермь</i></b></figcaption>
-            </figure>
-            <blockquote>
-                Спасибо за незабываемую экскурсию!Увозим с собой нереальные фотографии! <br>
-                Организаторам огромное спасибо, что даже в дождь путешествие было комфортным.
-            </blockquote>
-            <p></p>
-            <hr align="left" width="650">
-            <p></p>
-            <figure>
-                <img src="Images/17.png" alt="Света, Алена, Саша и Ваня, Краснодар" height="600">
-                <figcaption><b><i>Света, Алена, Саша и Ваня, Краснодар</i></b></figcaption>
-            </figure>
+            <section>
+                <figure>
+                    <h3 id="feedback">Отзывы клиентов</h3>
+                    <img src="Images/5.png" alt="Аня и Сережа, Пермь" width="500">
+                    <figcaption><b><i>Аня и Сережа, Пермь</i></b></figcaption>
+                </figure>
                 <blockquote>
-                Мы провели замечательный день с вашей экскурсией по крышам Санкт-Петербурга! <br>
-                Это было настоящее приключение. Рекомендуем!
+                    Спасибо за незабываемую экскурсию!Увозим с собой нереальные фотографии! <br>
+                    Организаторам огромное спасибо, что даже в дождь путешествие было комфортным.
                 </blockquote>
+                <p></p>
+                <hr align="left" width="650">
+                <p></p>
+                <figure>
+                    <img src="Images/17.png" alt="Света, Алена, Саша и Ваня, Краснодар" height="600">
+                    <figcaption><b><i>Света, Алена, Саша и Ваня, Краснодар</i></b></figcaption>
+                </figure>
+                    <blockquote>
+                    Мы провели замечательный день с вашей экскурсией по крышам Санкт-Петербурга! <br>
+                    Это было настоящее приключение. Рекомендуем!
+                    </blockquote>
+                <hr align="left" width="650">
+                <p></p>
+                <figure>
+                    <img src="Images/21.png" alt="Кристина, Архангельск" width="500">
+                    <figcaption><b><i>Кристина, Архангельск</i></b></figcaption>
+                </figure>    
+                <blockquote>
+                    Я просто влюбилась в Санкт-Петербург благодаря этой экскурсии! <br>
+                    Суперский гид рассказал удивительные истории о городе и его жителях. <br> 
+                    Отдельно отмечу маршрут. <br>
+                    Не первый раз в Питере, но эти локации увидела впервые. Класс!
+                </blockquote>
+            </section>
             <hr align="left" width="650">
             <p></p>
-            <figure>
-                <img src="Images/21.png" alt="Кристина, Архангельск" width="500">
-                <figcaption><b><i>Кристина, Архангельск</i></b></figcaption>
-            </figure>    
-            <blockquote>
-                Я просто влюбилась в Санкт-Петербург благодаря этой экскурсии! <br>
-                Суперский гид рассказал удивительные истории о городе и его жителях. <br> 
-                Отдельно отмечу маршрут. <br>
-                Не первый раз в Питере, но эти локации увидела впервые. Класс!
-            </blockquote>
-            <hr align="left" width="650">
-            <p></p>
-            <h3><small>Как записаться на экскурсию</small></h3>
-            <p>
-                Для подробной информации заполните форму.<br>
-                Наши менеджеры с вами свяжутся.
-            </p>
-            <form action="">
-                <input type="text" placeholder="Имя"><br>
-                <input type="text" placeholder="Фамилия"><br>
-                <input type="email" placeholder="e-mail"><br>
-                <input type="tel" placeholder="Номер телефона"><br><br>
-                <button type="submit">Отправить</button>
-            </form><br>
-            <label for="tariff">Выберите тариф:</label>
-            <select name="tariff" id="tariff"><br>
-                <option value="econom">Эконом</option>
-                <option value="comfort">Комфорт</option>
-                <option value="premium">Премиум</option>
-                <option value="luxery">Люкс</option>
-            </select><br><br>
+            <section>
+                <h3><small>Как записаться на экскурсию</small></h3>
+                <p>
+                    Для подробной информации заполните форму.<br>
+                    Наши менеджеры с вами свяжутся.
+                </p>
+                <form action="">
+                    <input type="text" placeholder="Имя"><br>
+                    <input type="text" placeholder="Фамилия"><br>
+                    <input type="email" placeholder="e-mail"><br>
+                    <input type="tel" placeholder="Номер телефона"><br><br>
+                    <button type="submit">Отправить</button>
+                </form><br>
+                <label for="tariff">Выберите тариф:</label>
+                <select name="tariff" id="tariff"><br>
+                    <option value="econom">Эконом</option>
+                    <option value="comfort">Комфорт</option>
+                    <option value="premium">Премиум</option>
+                    <option value="luxery">Люкс</option>
+                </select><br><br>
+            </section>
             <aside>
                 <h2>Другие экскурсии</h2>
                 <img src="Images/2.png" alt="Rivers and channals of Saint-Petersburg" width="900">
@@ -204,6 +208,15 @@
         </main>
         <footer id="contacts">
             <a href="https://t.me/grammazeka">Связаться с автором экскурсии</a>
+            <br>
+            <br>
+            <nav>
+                <a href="#home">Главная</a>
+                <a href="#program">Программа</a>
+                <a href="#contacts">Контакты</a>
+                <a href="#feedback">Отзывы</a>  
+                <a href="#TopPage">В начало</a>              
+            </nav>
         </footer>
     </body>
 </html>
