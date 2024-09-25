@@ -7,10 +7,14 @@
     <body>
         <header id="TopPage">
             <nav>
-                <a href="#home">Главная</a>
-                <a href="#program">Программа</a>
-                <a href="#contacts">Контакты</a>
-                <a href="#feedback">Отзывы</a>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#program">Программа</a></li>
+                    <li><a href="#audience">Для кого</a></li>
+                    <li><a href="#prices">Цены</a></li>
+                    <li><a href="#feedback">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
             </nav>
         </header>
         <header id="home">
@@ -37,7 +41,7 @@
                     <li>Прогулки по крышам.</li>
                 </ol>
             </section>
-            <section>
+            <section id="audience">
                 <h2><b><i><small>Кому подойдет экскурсия?</small></i></b></h2>
                 <img src="Images/18.png" alt="Ekaterina" width="900">
                 <ul>
@@ -85,7 +89,7 @@
                 <p>Мы предлагаем различные варианты оплаты. Менеджер поможет подобрать оптимальный вариант.</p>
             </section>
             
-            <div class="dop">
+            <section class="dop">
                 <h2>Дополнительные услуги</h2>
                 <form class="dop-form">
                     <ul>
@@ -140,7 +144,7 @@
                     });
                     });
                 </script>
-            </div>
+            </section>
             <section>
                 <figure>
                     <h3 id="feedback">Отзывы клиентов</h3>
@@ -196,27 +200,50 @@
                     <option value="comfort">Комфорт</option>
                     <option value="premium">Премиум</option>
                     <option value="luxery">Люкс</option>
-                </select><br><br>
+                </select><br>
             </section>
             <aside>
                 <h2>Другие экскурсии</h2>
-                <img src="Images/2.png" alt="Rivers and channals of Saint-Petersburg" width="900">
-                <p>Экскурсия по рекам и каналам</p>
-                <img src="Images/3.png" alt="Mystical Saint-Petersburg" width="900">
-                <p>Мистический Санкт-Петербург</p>
+                <ul>
+                    <li>
+                        <img src="Images/2.png" alt="Rivers and channals of Saint-Petersburg" width="900">
+                        <p>Экскурсия по рекам и каналам</p>
+                    </li>
+                    <li>
+                        <img src="Images/3.png" alt="Mystical Saint-Petersburg" width="900">
+                        <p>Мистический Санкт-Петербург</p>
+                    </li>
+                    <li>
+                        <img src="Images/4.png" alt="Walking throght the Saint-Petersburg" width="900">
+                        <p>Пешая прогулка по городу</p>
+                    </li>
+                    <li>
+                        <img src="Images/6.png" alt="7 bridges" width="900">
+                        <p>Семь мостов</p>
+                    </li>
+                    <li>
+                        <img src="Images/7.png" alt="Literary Saint-Petersburg" width="900">
+                        <p>Литературный Петербург</p>
+                    </li>
+                    <li>
+                        <img src="Images/8.png" alt="Saint-Petersburg water area" width="900">
+                        <p>Акватория Невы</p>
+                    </li>
+                    <li>
+                        <img src="Images/9.png" alt="Walking under drawbridges" width="900">
+                        <p>Прогулка под разводными мостами</p>
+                    </li>
+                </ul>
             </aside>
         </main>
-        <footer id="contacts">
-            <a href="https://t.me/grammazeka">Связаться с автором экскурсии</a>
-            <br>
-            <br>
-            <nav>
-                <a href="#home">Главная</a>
-                <a href="#program">Программа</a>
-                <a href="#contacts">Контакты</a>
-                <a href="#feedback">Отзывы</a>  
-                <a href="#TopPage">В начало</a>              
-            </nav>
+        <footer>
+            <address id="contacts">
+                <a href="https://t.me/grammazeka">Связаться с автором экскурсии</a>
+            </address>
+            <p>2024 год, Авторская экскурсия по Санкт-Петербургу</p>
         </footer>
+        <nav>
+            <a href="#TopPage">В начало страницы</a>              
+        </nav>
     </body>
 </html>
