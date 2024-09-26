@@ -94,12 +94,12 @@
                 <form class="dop-form">
                     <ul>
                         <li>
-                        <input type="checkbox" name="services" value="transfer" data-price="1200">
-                        <label>Трансфер до места начала экскурсии</label>
+                            <input type="checkbox" name="services" value="transfer" data-price="1200">
+                            <label>Трансфер до места начала экскурсии</label>
                         </li>
                         <li>
-                        <input type="checkbox" name="services" value="disabled_transfer" data-price="2100">
-                        <label>Трансфер для людей из маломобильных групп населения</label>
+                            <input type="checkbox" name="services" value="disabled_transfer" data-price="2100">
+                            <label>Трансфер для людей из маломобильных групп населения</label>
                         </li>
                         <li>
                             <input type="checkbox" name="services" value="breakfast" data-price="300">
@@ -127,7 +127,7 @@
                         </li>
                     </ul>
                 </form>
-                <p2 id="total-price">Сумма: 0 рублей</p2>
+                <p id="total-price">Сумма: 0 рублей</p>
                 <script>
                     const checkboxes = document.querySelectorAll('input[name="services"]');
                     const totalPriceElement = document.getElementById('total-price');
@@ -181,7 +181,7 @@
             </section>
             <hr align="left" width="650">
             <p></p>
-            <section>
+            <section class="column">
                 <h3><small>Как записаться на экскурсию</small></h3>
                 <p>
                     Для подробной информации заполните форму.<br>
@@ -194,6 +194,8 @@
                     <input type="tel" placeholder="Номер телефона"><br><br>
                     <button type="submit">Отправить</button>
                 </form><br>
+            </section>
+            <section>
                 <label for="tariff">Выберите тариф:</label>
                 <select name="tariff" id="tariff"><br>
                     <option value="econom">Эконом</option>
@@ -214,32 +216,32 @@
                         <p>Мистический Санкт-Петербург</p>
                     </li>
                     <li>
-                        <img src="Images/4.png" alt="Walking throght the Saint-Petersburg" width="900">
+                        <img src="Images/4.png" alt="Walking tour of Saint-Petersburg" width="900">
                         <p>Пешая прогулка по городу</p>
                     </li>
                     <li>
-                        <img src="Images/6.png" alt="7 bridges" width="900">
+                        <img src="Images/6.png" alt="Bridges of Saint-Petersburg" width="900">
                         <p>Семь мостов</p>
                     </li>
                     <li>
-                        <img src="Images/7.png" alt="Literary Saint-Petersburg" width="900">
+                        <img src="Images/7.png" alt="Saint-Petersburg's Literature" width="900">
                         <p>Литературный Петербург</p>
                     </li>
                     <li>
-                        <img src="Images/8.png" alt="Saint-Petersburg water area" width="900">
+                        <img src="Images/8.png" alt="Water area of Neva" width="900">
                         <p>Акватория Невы</p>
                     </li>
                     <li>
-                        <img src="Images/9.png" alt="Walking under drawbridges" width="900">
+                        <img src="Images/9.png" alt="Drawbridges tour" width="900">
                         <p>Прогулка под разводными мостами</p>
                     </li>
                 </ul>
             </aside>
         </main>
+        <address id="contacts">
+            <a href="https://t.me/grammazeka">Связаться с автором экскурсии</a>
+        </address>
         <footer>
-            <address id="contacts">
-                <a href="https://t.me/grammazeka">Связаться с автором экскурсии</a>
-            </address>
             <p>2024 год, Авторская экскурсия по Санкт-Петербургу</p>
         </footer>
         <nav>
