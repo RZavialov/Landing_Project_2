@@ -17,14 +17,15 @@
                 </ul>
             </nav>
         </header>
-        <header id="home">
-        <h1><b><i><big>Авторская экскурсия по Санкт-Петербургу</big></i></b></h1>
-        <img src="Images/1.png" alt="Казанский собор" width="900">
-        <p>Откройте для себя великолепие Санкт-Петербурга с нашими увлекательными экскурсиями. <br>
-            Погрузитесь в богатую культуру и архитектуру, посетите известные достопримечательности. <br>
-            Наши экскурсии созданы, чтобы показать вам самое лучшее, что Санкт-Петербург готов предложить.
-        </p>
-        </header>
+
+        <section id="home">
+            <h1><b><i><big>Авторская экскурсия по Санкт-Петербургу</big></i></b></h1>
+            <img src="Images/1.png" alt="Казанский собор" width="900">
+            <p>Откройте для себя великолепие Санкт-Петербурга с нашими увлекательными экскурсиями. <br>
+                Погрузитесь в богатую культуру и архитектуру, посетите известные достопримечательности. <br>
+                Наши экскурсии созданы, чтобы показать вам самое лучшее, что Санкт-Петербург готов предложить.
+            </p>
+        </section>
 
         <main>
             <section id="program">
@@ -41,6 +42,7 @@
                     <li>Прогулки по крышам.</li>
                 </ol>
             </section>
+
             <section id="audience">
                 <h2><b><i><small>Кому подойдет экскурсия?</small></i></b></h2>
                 <img src="Images/18.png" alt="Ekaterina" width="900">
@@ -51,6 +53,7 @@
                     <li>Семьям с детьми старше 12 лет.</li>
                 </ul> 
             </section>
+
             <section class="container-tarif" id="prices">
                 <h2 class="sub-heading">Какие есть тарифы?</h2>
                 <p class="text-tarif">Мы знаем, что каждое путешествие уникально. Поэтому разработали несколько тарифов, чтобы вы могли выбрать самый комфортный для себя. Независимо от выбранного тарифа, вас ждет незабываемое путешествие.</p>
@@ -128,59 +131,49 @@
                     </ul>
                 </form>
                 <p id="total-price">Сумма: 0 рублей</p>
-                <script>
-                    const checkboxes = document.querySelectorAll('input[name="services"]');
-                    const totalPriceElement = document.getElementById('total-price');
-                
-                    checkboxes.forEach(checkbox => {
-                    checkbox.addEventListener('change', () => {
-                        let totalPrice = 0;
-                        checkboxes.forEach(checkbox => {
-                        if (checkbox.checked) {
-                            totalPrice += parseInt(checkbox.getAttribute('data-price'));
-                        }
-                        });
-                        totalPriceElement.textContent = `Сумма: ${totalPrice} рублей`;
-                    });
-                    });
-                </script>
             </section>
+
             <section>
                 <figure>
                     <h3 id="feedback">Отзывы клиентов</h3>
                     <img src="Images/5.png" alt="Аня и Сережа, Пермь" width="500">
                     <figcaption><b><i>Аня и Сережа, Пермь</i></b></figcaption>
+                    <blockquote>
+                        Спасибо за незабываемую экскурсию!Увозим с собой нереальные фотографии! <br>
+                        Организаторам огромное спасибо, что даже в дождь путешествие было комфортным.
+                    </blockquote>
                 </figure>
-                <blockquote>
-                    Спасибо за незабываемую экскурсию!Увозим с собой нереальные фотографии! <br>
-                    Организаторам огромное спасибо, что даже в дождь путешествие было комфортным.
-                </blockquote>
+                
                 <p></p>
                 <hr align="left" width="650">
                 <p></p>
+
                 <figure>
                     <img src="Images/17.png" alt="Света, Алена, Саша и Ваня, Краснодар" height="600">
                     <figcaption><b><i>Света, Алена, Саша и Ваня, Краснодар</i></b></figcaption>
-                </figure>
                     <blockquote>
-                    Мы провели замечательный день с вашей экскурсией по крышам Санкт-Петербурга! <br>
-                    Это было настоящее приключение. Рекомендуем!
+                        Мы провели замечательный день с вашей экскурсией по крышам Санкт-Петербурга! <br>
+                        Это было настоящее приключение. Рекомендуем!
                     </blockquote>
+                </figure>
+                    
                 <hr align="left" width="650">
                 <p></p>
+
                 <figure>
                     <img src="Images/21.png" alt="Кристина, Архангельск" width="500">
                     <figcaption><b><i>Кристина, Архангельск</i></b></figcaption>
-                </figure>    
-                <blockquote>
-                    Я просто влюбилась в Санкт-Петербург благодаря этой экскурсии! <br>
-                    Суперский гид рассказал удивительные истории о городе и его жителях. <br> 
-                    Отдельно отмечу маршрут. <br>
-                    Не первый раз в Питере, но эти локации увидела впервые. Класс!
-                </blockquote>
+                    <blockquote>
+                        Я просто влюбилась в Санкт-Петербург благодаря этой экскурсии! <br>
+                        Суперский гид рассказал удивительные истории о городе и его жителях. <br> 
+                        Отдельно отмечу маршрут. <br>
+                        Не первый раз в Питере, но эти локации увидела впервые. Класс!
+                    </blockquote>
+                </figure>
+                <hr align="left" width="650">
+                <p></p>    
             </section>
-            <hr align="left" width="650">
-            <p></p>
+
             <section class="column">
                 <h3><small>Как записаться на экскурсию</small></h3>
                 <p>
@@ -195,6 +188,7 @@
                     <button type="submit">Отправить</button>
                 </form><br>
             </section>
+
             <section>
                 <label for="tariff">Выберите тариф:</label>
                 <select name="tariff" id="tariff"><br>
@@ -204,6 +198,7 @@
                     <option value="luxery">Люкс</option>
                 </select><br>
             </section>
+
             <aside>
                 <h2>Другие экскурсии</h2>
                 <ul>
@@ -237,15 +232,35 @@
                     </li>
                 </ul>
             </aside>
+
+            <address id="contacts">
+                <a href="https://t.me/grammazeka">Связаться с автором экскурсии</a>
+            </address>
         </main>
-        <address id="contacts">
-            <a href="https://t.me/grammazeka">Связаться с автором экскурсии</a>
-        </address>
+
         <footer>
             <p>2024 год, Авторская экскурсия по Санкт-Петербургу</p>
         </footer>
+
         <nav>
             <a href="#TopPage">В начало страницы</a>              
         </nav>
+
+        <script>
+            const checkboxes = document.querySelectorAll('input[name="services"]');
+            const totalPriceElement = document.getElementById('total-price');
+        
+            checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                let totalPrice = 0;
+                checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    totalPrice += parseInt(checkbox.getAttribute('data-price'));
+                }
+                });
+                totalPriceElement.textContent = `Сумма: ${totalPrice} рублей`;
+            });
+            });
+        </script>
     </body>
 </html>
